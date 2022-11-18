@@ -20,8 +20,8 @@
     rel="stylesheet">
 
   <!-- CSS Base -->
-  <link rel="stylesheet" type='text/css' media='all' href="css/webslides.css">
-  <link rel="stylesheet" type="text/css" media="all" href="css/svg-icons.css">
+  <link rel="stylesheet" type='text/css' media='all' href="{{ .Site.BaseURL }}/css/webslides.css">
+  <link rel="stylesheet" type="text/css" media="all" href="{{ .Site.BaseURL }}/css/svg-icons.css">
   {{ range .Site.Params.customcss }}
   <link rel="stylesheet" href="{{ . | absURL }}">
   {{ end }}
